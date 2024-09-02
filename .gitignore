@@ -8,3 +8,4 @@
 # support running go modules in vendor mode for local development
 vendor/
 /dist/
+coverage.out
