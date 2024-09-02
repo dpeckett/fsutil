@@ -1,0 +1,38 @@
+Source: golang-github-tonistiigi-fsutil
+Section: golang
+Priority: optional
+Maintainer: Damian Peckett <damian@pecke.tt>
+Uploaders: Damian Peckett <damian@pecke.tt>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-golang,
+               gogoprotobuf,
+               golang-any,
+               golang-github-containerd-continuity-dev,
+               golang-github-docker-docker-dev,
+               golang-github-moby-patternmatcher-dev,
+               golang-github-opencontainers-go-digest-dev,
+               golang-github-pkg-errors-dev,
+               golang-github-stretchr-testify-dev,
+               golang-github-gogo-protobuf-dev,
+               golang-golang-x-sync-dev,
+               golang-golang-x-sys-dev
+Testsuite: autopkgtest-pkg-go
+Standards-Version: 4.6.2
+Vcs-Browser: https://github.com/dpeckett/fsutil
+Vcs-Git: https://github.com/dpeckett/fsutil.git
+Homepage: https://github.com/dpeckett/fsutil
+XS-Go-Import-Path: github.com/tonistiigi/fsutil
+
+Package: golang-github-tonistiigi-fsutil-dev
+Architecture: all
+Depends: golang-github-containerd-continuity-dev,
+         golang-github-moby-patternmatcher-dev,
+         golang-github-opencontainers-go-digest-dev,
+         golang-github-pkg-errors-dev,
+         golang-github-gogo-protobuf-dev,
+         golang-golang-x-sync-dev,
+         golang-golang-x-sys-dev,
+         ${misc:Depends}
+Description: Incremental file directory sync tools (library)
+ Incremental file directory sync tools in golang.
