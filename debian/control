@@ -19,9 +19,9 @@ Build-Depends: debhelper-compat (= 13),
                golang-golang-x-sys-dev
 Testsuite: autopkgtest-pkg-go
 Standards-Version: 4.6.2
-Vcs-Browser: https://github.com/dpeckett/fsutil
-Vcs-Git: https://github.com/dpeckett/fsutil.git
-Homepage: https://github.com/dpeckett/fsutil
+Vcs-Browser: https://github.com/immutos/fsutil
+Vcs-Git: https://github.com/immutos/fsutil.git
+Homepage: https://github.com/immutos/fsutil
 XS-Go-Import-Path: github.com/tonistiigi/fsutil
 
 Package: golang-github-tonistiigi-fsutil-dev
